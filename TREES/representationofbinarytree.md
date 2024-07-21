@@ -22,10 +22,10 @@ Binary Tree :: --------------------------
 -----------------------------------------
 
 // binary tree : 
-    a tree of degree 2 : called binary tree 
-    every node have tow children , 1 children 
-    so name to children : left child and right child 
-    children  = { 0,1,2 };
+  a. a tree of degree 2 : called binary tree 
+  b. every node have tow children , 1 children 
+  c. so name to children : left child and right child 
+  d. children  = { 0,1,2 };
 
 // number of binary tree with N node 
 // if not defined then called unlabeled node 
