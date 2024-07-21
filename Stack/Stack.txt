@@ -1,0 +1,11 @@
+Last in first out kind of data structure
+can be implemented through array or linkedlist 
+stack are LIFO
+
+functions we can implement on stack
+1. push(x) ; adding x on top of stack
+2. pop() ; removing top element of stack
+3. peek(index) ; peeking at index index from first value having index 0
+4. stackTop() : what is at top of the stack
+5. isEmpty() ; if stack is isEmpty
+6. isFull() ; if stack is isFull 

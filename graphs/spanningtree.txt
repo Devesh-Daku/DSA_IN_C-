@@ -1,0 +1,34 @@
+// subgraph of a graph : edges = n-1 ;
+// so that no cycle and graph is connected 
+// n = vertices 
+// e = edges 
+// and not be any cycle 
+// 
+// a graph 
+//     1---2
+//     |\ /|
+//     | X |
+//     |/ \|
+//     4---3
+
+// a sub graph , as a spanning tree 
+//     1---2
+//     |
+//     |
+//     4---3
+
+//     1   2
+//     |   |
+//     |   |
+//     4---3
+// more than 1 spanning tree are possible 
+// vertices = 4 , edges = 6 
+// 6C(4-1)= 6C3 ways : 
+// but cycles are forme here it is 4 
+// 6C3 - 4 
+// if tree edges are weighted : then we have 2 algo to find minimumc cost spanning tree 
+
+prims's algo : 
+1. select minimum cost edge : 
+2. select minimum cost edge already adjacent to selected 
+3. repeat the cycle : 

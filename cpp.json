@@ -1,0 +1,77 @@
+"Print to console": {
+    "prefix": "cpbegin",
+    "body": [
+        "#include <bits/stdc++.h>",
+        "#define ll long long int",
+        "#define li long int" ,
+        "#define si short int",
+        "using namespace std;",
+        "void solve();",
+        "int main(){",
+        "\tios::sync_with_stdio(false);",
+        "\tcin.tie(0);",
+        "\tint t;",
+        "\tcin>>t;",
+        "\twhile(t--){solve();}",
+        "\treturn 0;",
+        "}",
+        "void solve(){",
+        "\t$0",
+        "}"
+    ],
+    "description": "Log output to console"
+},
+"love is false": {
+    "prefix": "mybool",
+    "body": [
+        "#define love false",
+        "#define pain true",
+        "#define isEven(x) ( (x%2==0) ? pain : love ) "
+        
+    ],
+    "description": "Log output to console"
+},
+"loopi": {
+    "prefix": "foriloop",
+    "body": [
+        "for(int i=0 ; i< $1; i++ ) {",
+        "\t$0",
+        "}"
+    ],
+    "description": "Log output to console"
+},
+"loopj": {
+    "prefix": "forjloop",
+    "body": [
+        "for(int j=0 ; j< $1; j++ ) {",
+        "\t$0",
+        "}"
+    ],
+    "description": "Log output to console"
+},
+"loopk": {
+    "prefix": "forkloop",
+    "body": [
+        "for(int k=0 ; k< $1; k++ ) {",
+        "\t$0",
+        "}"
+    ],
+    "description": "Log output to console"
+},
+"simplebegin": {
+        "prefix": "simplebegin",
+        "body": [
+            "#include <bits/stdc++.h>",
+        "#define ll long long int",
+        "#define li long int" ,
+        "#define si short int",
+        "using namespace std;",
+            "int main () {",
+            "\tios::sync_with_stdio(false);",
+            "\tcin.tie(0);",
+            "\t$0",
+            "\treturn 0;",
+            "}"
+        ],
+        "description": "Log output to console"
+    }

@@ -1,0 +1,16 @@
+//fifo 
+// first in first out 
+// it have two end 
+1 . front end 
+2. rare end 
+insertion is done forn rareend
+deleteion is done from frontend
+
+ADT of queue 
+1 . space for storage ( data )
+2 . front pointer of deleteon 
+3 . rear pointer for inserton 
+
+implemented through both array and linked list 
+
+

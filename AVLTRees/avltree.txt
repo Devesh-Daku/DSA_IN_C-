@@ -1,0 +1,30 @@
+bf = height of left sub tree - height of right sub tree 
+balance factor ( bf ) = { -1, 0 , 1} // called balacnde 
+if |bf| > 1 imbalanced node 
+if |bf| <= balanced node 
+
+// Rotation 
+        30          20
+       /           /  \
+      20    >>   10    30 
+     /
+    10 
+called LL imbalanced so rotation can be called as 
+LL rotation ,cw rotation ,right rotation...
+rotation is always done with three node only
+so rr rotation will be on rr imbalance 
+    10                20      
+      \              /  \ 
+       20     >>   10    30 
+         \ 
+          30 
+
+// LR imbalance 
+        30                   30
+       /                    /  
+      10   >>R rotation    20      >>  L rotation  balanced tree
+       \                  /
+        20               10 
+     
+
+similarly RL rotation : 

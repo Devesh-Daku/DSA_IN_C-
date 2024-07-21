@@ -1,0 +1,17 @@
+// linear probing is littel more time taking : but less memory consumption 
+// suitable if number of keys < size of hashtable 
+// h(x) = ( h(x)  + i ) : i = 0 ; if occupied i++
+// search will be time consuming : 
+// loading function  lambda = n/size 
+// leading factor shuld be <.5 ;
+// so again too wastage of space 
+// deletion should be problematic 
+// we have to shift ; which is not easy in this case 
+// deletion's solution is deleting taking out all the key , and delete that one and reinsertion 
+// we can give a flag that key is there but deleted , 
+// generally deletion is not prefferd with linear probing 
+// 
+
+
+
+

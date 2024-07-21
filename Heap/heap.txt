@@ -1,0 +1,2 @@
+heap is a complete binary tree  : 
+with height is log n only 

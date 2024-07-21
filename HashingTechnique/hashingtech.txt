@@ -1,0 +1,18 @@
+// hash function is h(x) = x%10;
+// hash array is a pointer array to nodes at the point staisfy and chaining will occure in inserted order 
+// n = number of keys 
+// size = 10 : means size of hashtable 
+// then loading factore is defined as lambda = n/size;
+// average sucessful search time = 1 + (lambda/2);
+// average unsucessfull search time = 1 + lambda ;
+// hash function need not to be x%10 ;
+// it can be (x/10)%10;
+// loading factors means keys are already distrubted : 
+// responsibility of worst case is hashfucntion : so we have to choose proper hashfucntion so that keys will get uniformaly distribute and 
+// atleast to major extent keys are uniformaly distribute: 
+
+// for implementing chainig we require linked list : 
+
+
+
+

@@ -1,0 +1,42 @@
+various ways of sorting 
+1. Bubble
+2. Selection
+3. Insertion
+//---
+4. heap
+5. merge
+6. Quick
+7. tree
+8. Shell
+// index based 
+9. Count
+10. Bucket/bin 
+11. Radix Sort 
+
+
+How to compare between them 
+1. Number of comparison made in a sorting meathod
+2. Number of Swaps happend in a sorting meathod
+3. Adoptive // if the sorting techniques taking minimum time on a already or nearby sorted list 
+4. Stable // if the algorithm preserving the order of duplicate element then it is called stable 
+5. Extra Memory 
+
+form 1. to 8 sorting algorithm : called comparison based sort : 
+from 9 to 11 called index sort : 
+from 1 to 3 algorithm takes N-square order of time : 
+from 4 to 7 takes  nlog(n) order of ime : 
+the index sort from 9 to 11 takes order of n time : 
+the 8th Shell sort takes  order of N power ( 3/2 ) time : 
+
+// Let's compare Bubble sort and Insertion Sort 
+
+min comp ::  n      n 
+max comp ::  n^2    n^2
+min swap ::  1       1
+max swap ::  n^2    n^2
+adaptive :: yes     yes 
+stable   :: no      no
+LL suitable: No     yes
+k passes :: yes     No  
+
+only two algo are adaptive and only three are stable out of thee the two are bubble and Insertion
