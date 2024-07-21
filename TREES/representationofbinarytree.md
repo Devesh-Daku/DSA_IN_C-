@@ -166,14 +166,14 @@ A,B,C,D,E,F,G;
        /  \   /  \
       D    E F    G
 
-Emt Idx L   R
-A   1   2   3
-B   2   4   5
-C   3   6   7
-D   4   -   -
-E   5   -   -
-F   6   -   -
-G   7   -   -
+      Emt Idx L   R
+      A   1   2   3
+      B   2   4   5
+      C   3   6   7
+      D   4   -   -
+      E   5   -   -
+      F   6   -   -
+      G   7   -   -
 
 node i (2*i) (2*i+1)
     

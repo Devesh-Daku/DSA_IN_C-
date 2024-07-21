@@ -12,5 +12,12 @@ example we are taking a 0/1 knapsack recrusive :
    b. optimal ( min ,max ,gratest ,lowest ...)
 2. Start with recurssion :
    a. Choice Diagram
-   item weight <= W : ( may be we can put it in or may be we can't )
-   item weight > W : ( we can't put that item in knapsac)
+    item weight <= W : ( may be we can put it in or may be we can't )
+    item weight > W : ( we can't put that item in knapsac)
+
+   b. Writing Function
+    int Knapsack( int wt[] , int val[] , int W , int n){
+        // base condition
+        // choice diagram
+
+   }
