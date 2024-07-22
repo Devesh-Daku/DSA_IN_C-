@@ -17,8 +17,9 @@ class Node {
 };
 
 class BinTree {
+    protected:
+        Node *root; 
     public : 
-    Node *root; 
         BinTree(){root = NULL;}
         void CreateTree();
 

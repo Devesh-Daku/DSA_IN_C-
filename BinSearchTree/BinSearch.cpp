@@ -1,7 +1,7 @@
 #include"./TemplateBinTree.h"
 
 
-class BinSearchTree : public BinTree {
+class BinSearchTree : protected BinTree {
     public : 
     void Insert(int);
     Node* RInsert(int , Node*);
@@ -16,8 +16,11 @@ class BinSearchTree : public BinTree {
     Node* Delete(int , Node*);
     Node* Delete(int k) { return Delete(k,root);}
     int Height(Node*p);
-    Node* Inpre(Node *);
-    Node* InSucc(Node *);
+
+    Node* Inpre(Node *); // inorder predecessor 
+    Node* InSucc(Node *);// inorder successor 
+    
+    void Create_from_preorder(int pre[] , int n) ;
 };
 
 void BinSearchTree :: Insert(int key) {
@@ -75,7 +78,6 @@ int BinSearchTree :: Height(Node*p){
 Node* BinSearchTree :: Inpre(Node *p){
     while(p!=NULL && p->rht != NULL){
         p = p->rht;
-        
     }
     return p;
 }
@@ -114,42 +116,59 @@ Node* BinSearchTree :: Delete(int key , Node*p){
     return p;
 }
 
-// //Generating bst from preorder array 
-// class BSTPreorder : public BinSearchTree {
-//     Node * root;
-//     public : 
-//     BSTPreorder(int A[] , int n);
-//     // TODO: pending 
-// };
-// BSTPreorder :: BSTpreorder(int A[] , int n) {
-//     root = RInsert(A[0]);
-//     Stack<Node*> st(100);
-
-//     for(int i=1 ; i< n; i++ ) {
+//Generating bst from preorder array 
+void BinSearchTree :: Create_from_preorder(int pre[] , int n){
+    // lecture number 309
+    stack<Node*> stk;
+    Node *t ,*p;
+    int i=0;
+    root = new Node(pre[i++]);
+    p = root ;
+    while (i<n)
+    {
+        t = new Node(pre[i++]);
+        if(pre[i] < p->data) {
+            p->lft = t;
+            stk.push(p);
+            p=t;
+        }
+        else if( !stk.empty() && (pre[i] > stk.top()->data) ){     
+            p = stk.top();
+            stk.pop();
+            i--;
+        }   
+        else{
+            p->rht = t;
+            p=t;
+        }
         
-//     }
-    
-// }
+    }
+}
 
 int main () {
     BinSearchTree B;
-    B.RInsert(10);
-    B.RInsert(11);
-    B.RInsert(14);
-    B.RInsert(7);
-    B.RInsert(13);
+
+    int pre[] = {30,20,10,15,25,40,50,45};
+    B.Create_from_preorder(pre,8);
+    // B.RInsert(10);
+    // B.RInsert(11);
+    // B.RInsert(14);
+    // B.RInsert(7);
+    // B.RInsert(13);
 
     B.Inorder();
 
-    if(B.Search(15)) cout << "key element is found" << endl;
-    else cout << "key element is not found "<< endl;
-    cout << endl;
+    // if(B.Search(15)) cout << "key element is found" << endl;
+    // else cout << "key element is not found "<< endl;
+    // cout << endl;
 
     // B.Delete(11);
     // B.Inorder();
     // B.Delete(13);
     // B.Inorder();
+
+
     
-    B.PrintTree();
+    // B.PrintTree();
     return 0;
 }
